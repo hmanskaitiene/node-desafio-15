@@ -1,11 +1,10 @@
 {
-  "name": "14-desafio",
+  "name": "15-desafio",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "build": "node build_db.js"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
