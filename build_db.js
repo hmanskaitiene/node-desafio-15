@@ -1,10 +1,5 @@
 require('dotenv').config();
 
-if (!process.env.MARIADB_DATABASE) {
-    console.error("**VARIABLES DE ENTONRNO NO DEFINIDAS. UTILIZAR ARCHIVO .env.sample como referencia**");
-    return process.exit(1);
-}
-
 const {options_sqlite,options_mariadb} = require("./config/db")
 const sqlite = require('knex')(options_sqlite);
 const mariadb = require('knex')(options_mariadb);
