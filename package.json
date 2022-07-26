@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
@@ -24,7 +25,6 @@
     "moongose": "^1.0.0",
     "mysql": "^2.18.1",
     "node-fetch": "^2.6.7",
-    "nodemon": "^2.0.19",
     "normalizr": "^3.6.2",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
@@ -34,6 +34,7 @@
     "yargs": "^17.5.1"
   },
   "devDependencies": {
-    "artillery": "^2.0.0-22"
+    "artillery": "^2.0.0-22",
+    "nodemon": "^2.0.19"
   }
 }
