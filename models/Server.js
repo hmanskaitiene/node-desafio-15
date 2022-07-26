@@ -27,7 +27,8 @@ class Server {
         this.app  = express();
         this.server = require('http').createServer( this.app );
         this.io     = require('socket.io')( this.server );
-        this.port = argv.port ? argv.port : argv._.length > 0 ? argv._[0] : 8080
+        this.port = process.env.PORT || 8080;
+        //this.port = argv.port ? argv.port : argv._.length > 0 ? argv._[0] : 8080
         this.modo = argv.modo || 'fork';
         this.administrador = false;
         this.logger = logger;
